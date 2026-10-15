@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocational English 2B - Useful Expressions Master</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+        }
+        .card-hover {
+            transition: all 0.25s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .chat-bubble-left {
+            border-bottom-left-radius: 2px;
+        }
+        .chat-bubble-right {
+            border-bottom-right-radius: 2px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col">
+
+    <!-- Header / Navbar -->
+    <header class="gradient-bg text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-3">
+            <div class="flex items-center space-x-3">
+                <div class="bg-white/20 p-2.5 rounded-xl backdrop-blur-md">
+                    <i class="fa-solid fa-graduation-cap text-2xl text-yellow-300"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-xl leading-tight">Vocational English 2B</h1>
+                    <p class="text-xs text-indigo-100">Lesson 2A: Useful Expressions Interactive Lab</p>
+                </div>
+            </div>
+            <!-- Navigation Tabs -->
+            <nav class="flex bg-black/20 p-1 rounded-xl backdrop-blur-md text-sm">
+                <button onclick="switchTab('cheatsheet')" id="tab-cheatsheet" class="px-4 py-2 rounded-lg font-medium transition-all bg-white text-indigo-700 shadow">
+                    <i class="fa-solid fa-book-open mr-1.5"></i> Reference
+                </button>
+                <button onclick="switchTab('quiz')" id="tab-quiz" class="px-4 py-2 rounded-lg font-medium transition-all text-white hover:bg-white/10">
+                    <i class="fa-solid fa-list-check mr-1.5"></i> Category Quiz
+                </button>
+                <button onclick="switchTab('game')" id="tab-game" class="px-4 py-2 rounded-lg font-medium transition-all text-white hover:bg-white/10">
+                    <i class="fa-solid fa-comments mr-1.5"></i> Workplace Roleplay
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-6xl mx-auto px-4 py-8 flex-grow w-full">
+
+        <!-- ================= TAB 1: REFERENCE CHEATSHEET ================= -->
+        <section id="sec-cheatsheet" class="space-y-6">
+            <div class="bg-indigo-50 border-l-4 border-indigo-600 p-4 rounded-r-xl flex items-start gap-3">
+                <i class="fa-solid fa-circle-info text-indigo-600 text-xl mt-0.5"></i>
+                <div>
+                    <h3 class="font-bold text-indigo-900">Lesson Summary Guide</h3>
+                    <p class="text-sm text-indigo-700">Explore the core communicative functions taught in the video lesson. Click the speaker icon to hear sample pronunciations!</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- 1. Asking for Preference -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 card-hover">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <span class="w-9 h-9 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold">1</span>
+                        <h2 class="text-lg font-bold text-slate-800">Asking for Preference</h2>
+                    </div>
+
+                    <div class="space-y-4 text-sm">
+                        <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+                            <span class="font-semibold text-blue-700 block mb-1">Indefinite Number of Choices</span>
+                            <ul class="space-y-1.5 text-slate-600">
+                                <li class="flex items-center justify-between">
+                                    <span>• <strong>For / About / Regarding</strong> [topic], what is your preference?</span>
+                                    <button onclick="speak('For this project, what is your preference?')" class="text-slate-400 hover:text-indigo-600"><i class="fa-solid fa-volume-high"></i></button>
+                                </li>
+                                <li class="flex items-center justify-between">
+                                    <span>• <strong>Regarding</strong> [topic], what would you prefer?</span>
+                                    <button onclick="speak('Regarding the venue, what would you prefer?')" class="text-slate-400 hover:text-indigo-600"><i class="fa-solid fa-volume-high"></i></button>
+                                </li>
+                                <li class="flex items-center justify-between">
+                                    <span>• Do you have any preference?</span>
+                                    <button onclick="speak('Do you have any preference?')" class="text-slate-400 hover:text-indigo-600"><i class="fa-solid fa-volume-high"></i></button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+                            <span class="font-semibold text-blue-700 block mb-1">Two Choices (A or B)</span>
+                            <ul class="space-y-1.5 text-slate-600">
+                                <li class="flex items-center justify-between">
+                                    <span>• <strong>Concerning</strong> [topic], which one would you prefer?</span>
+                                    <button onclick="speak('Concerning the schedule, which one would you prefer?')" class="text-slate-400 hover:text-indigo-600"><i class="fa-solid fa-volume-high"></i></button>
+                                </li>
+                                <li class="flex items-center justify-between">
+                                    <span>• Which suggestion would you prefer?</span>
+                                    <button onclick="speak('Which suggestion would you prefer?')" class="text-slate-400 hover:text-indigo-600"><i class="fa-solid fa-volume-high"></i></button>
+                                </li>
+                                <li class="flex items-center justify-between">
+                                    <span>• Which one do you like better? (A) or (B)?</span>
+                                    <button onclick="speak('Which one do you like better? Plan A or Plan B?')" class="text-slate-400 hover:text-indigo-600"><i class="fa-solid fa-volume-high"></i></button>
+                                </li>
+                                <li class="flex items-center justify-between">
+                                    <span>• Would you prefer (A) or (B)?</span>
+                                    <button onclick="speak('Would you prefer morning or afternoon?')" class="text-slate-400 hover:text-indigo-600"><i class="fa-solid fa-volume-high"></i></button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+                            <span class="font-semibold text-blue-700 block mb-1">More Than Two Choices</span>
+                            <div class="flex items-center justify-between text-slate-600">
+                                <span>• Which one do you like <strong>best</strong>?</span>
+                                <button onclick="speak('Which one do you like best?')" class="text-slate-400 hover:text-indigo-600"><i class="fa-solid fa-volume-high"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Expressing Preference -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 card-hover">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <span class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold">2</span>
+                        <h2 class="text-lg font-bold text-slate-800">Expressing Preference</h2>
+                    </div>
+
+                    <div class="space-y-3 text-sm">
+                        <ul class="space-y-2 text-slate-600">
+                            <li class="p-2.5 bg-slate-50 rounded-lg border border-slate-100 flex items-center justify-between">
+                                <span>• I would prefer […]</span>
+                                <button onclick="speak('I would prefer the first option.')" class="text-slate-400 hover:text-indigo-600"><i class="fa-solid fa-volume-high"></i></button>
+                            </li>
+                            <li class="p-2.5 bg-slate-50 rounded-lg border border-slate-100 flex items-center justify-between">
+                                <span>• My preference would be for […]</span>
+                                <button onclick="speak('My preference would be for Option A.')" class="text-slate-400 hover:text-indigo-600"><i class="fa-solid fa-volume-high"></i></button>
+                            </li>
+                            <li class="p-2.5 bg-slate-50 rounded-lg border border-slate-100 flex items-center justify-between">
+                                <span>• My preference would be to [verb…]</span>
+                                <button onclick="speak('My preference would be to start early.')" class="text-slate-400 hover:text-indigo-600"><i class="fa-solid fa-volume-high"></i></button>
+                            </li>
+                            <li class="p-2.5 bg-slate-50 rounded-lg border border-slate-100 flex items-center justify-between">
+                                <span>• I would rather choose […] than […]</span>
+                                <button onclick="speak('I would rather choose the blue design than the red one.')" class="text-slate-400 hover:text-indigo-600"><i class="fa-solid fa-volume-high"></i></button>
+                            </li>
+                        </ul>
+
+                        <div class="p-3 bg-emerald-50 text-emerald-800 rounded-lg border border-emerald-200 text-xs mt-2">
+                            <strong class="block mb-1"><i class="fa-solid fa-lightbulb"></i> Rule for Reasons:</strong>
+                            Always add an explanation using <strong>because</strong>, <strong>as</strong>, or <strong>since</strong> (e.g., <em>"...because it saves time."</em>).
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Agreeing -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 card-hover">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <span class="w-9 h-9 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-bold">3</span>
+                        <h2 class="text-lg font-bold text-slate-800">Agreeing</h2>
+                    </div>
+
+                    <div class="space-y-3 text-sm">
+                        <ul class="space-y-2 text-slate-600">
+                            <li class="p-2.5 bg-slate-50 rounded-lg border border-slate-100 flex items-center justify-between">
+                                <span>• I agree with you.</span>
+                                <button onclick="speak('I agree with you.')" class="text-slate-400 hover:text-indigo-600"><i class="fa-solid fa-volume-high"></i></button>
+                            </li>
+                            <li class="p-2.5 bg-slate-50 rounded-lg border border-slate-100 flex items-center justify-between">
+                                <span>• I think you're right.</span>
+                                <button onclick="speak('I think you are right.')" class="text-slate-400 hover:text-indigo-600"><i class="fa-solid fa-volume-high"></i></button>
+                            </li>
+                            <li class="p-2.5 bg-slate-50 rounded-lg border border-slate-100 flex items-center justify-between">
+                                <span>• You've got a point.</span>
+                                <button onclick="speak('You have got a point.')" class="text-slate-400 hover:text-indigo-600"><i class="fa-solid fa-volume-high"></i></button>
+                            </li>
+                        </ul>
+
+                        <div class="p-3 bg-amber-50 text-amber-800 rounded-lg border border-amber-200 text-xs">
+                            <strong class="block mb-1"><i class="fa-solid fa-plus-circle"></i> Complete the thought:</strong>
+                            Add explanation with <strong>because / as / since</strong> to support why you agree!
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Disagreeing -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 card-hover">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <span class="w-9 h-9 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center font-bold">4</span>
+                        <h2 class="text-lg font-bold text-slate-800">Disagreeing</h2>
+                    </div>
+
+                    <div class="space-y-4 text-sm">
+                        <!-- Direct Disagreement -->
+                        <div class="p-3 bg-rose-50/50 rounded-lg border border-rose-100">
+                            <span class="font-semibold text-rose-700 block mb-1">Direct Disagreement (+ because/as/since)</span>
+                            <div class="grid grid-cols-2 gap-2 text-xs text-slate-700">
+                                <span>• Mmm… I'm not sure about that.</span>
+                                <span>• I don't think so.</span>
+                                <span>• Not me.</span>
+                                <span>• I disagree.</span>
+                            </div>
+                        </div>
+
+                        <!-- Softened / Diplomatic Disagreement -->
+                        <div class="p-3 bg-purple-50 rounded-lg border border-purple-100">
+                            <span class="font-semibold text-purple-800 block mb-1">Softened / Diplomatic (+ BUT...)</span>
+                            <p class="text-xs text-slate-500 mb-2">Acknowledge their view first, then use <strong>BUT</strong> to give your contrasting opinion:</p>
+                            <ul class="space-y-1 text-xs text-slate-700">
+                                <li>• I love that idea, <strong>but...</strong></li>
+                                <li>• That's true, <strong>but...</strong></li>
+                                <li>• You may have a point, <strong>but...</strong></li>
+                                <li>• I see your point, <strong>but...</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= TAB 2: CATEGORY QUIZ ================= -->
+        <section id="sec-quiz" class="hidden max-w-2xl mx-auto space-y-6">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                <div class="flex justify-between items-center mb-6">
+                    <div>
+                        <span class="text-xs font-semibold text-indigo-600 uppercase tracking-wider">Practice Quiz</span>
+                        <h2 class="text-xl font-bold text-slate-800">Classify the Expression</h2>
+                    </div>
+                    <div id="quiz-score-badge" class="bg-indigo-100 text-indigo-700 font-bold text-sm px-3 py-1 rounded-full">
+                        Score: <span id="quiz-score">0</span> / <span id="quiz-total">0</span>
+                    </div>
+                </div>
+
+                <!-- Quiz Card -->
+                <div id="quiz-card" class="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center space-y-4">
+                    <p class="text-sm text-slate-500">Which function best fits this phrase?</p>
+                    <div id="quiz-phrase" class="text-xl font-bold text-indigo-900 bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+                        "Loading question..."
+                    </div>
+
+                    <!-- Category Options -->
+                    <div class="grid grid-cols-2 gap-3 pt-2" id="quiz-options">
+                        <button onclick="checkQuiz('Asking for Preference')" class="p-3 bg-white border border-slate-200 hover:border-indigo-500 hover:bg-indigo-50 font-medium rounded-xl text-slate-700 text-sm transition-all text-left flex items-center justify-between">
+                            <span>Asking Preference</span>
+                            <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+                        </button>
+                        <button onclick="checkQuiz('Expressing Preference')" class="p-3 bg-white border border-slate-200 hover:border-indigo-500 hover:bg-indigo-50 font-medium rounded-xl text-slate-700 text-sm transition-all text-left flex items-center justify-between">
+                            <span>Expressing Preference</span>
+                            <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+                        </button>
+                        <button onclick="checkQuiz('Agreeing')" class="p-3 bg-white border border-slate-200 hover:border-indigo-500 hover:bg-indigo-50 font-medium rounded-xl text-slate-700 text-sm transition-all text-left flex items-center justify-between">
+                            <span>Agreeing</span>
+                            <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+                        </button>
+                        <button onclick="checkQuiz('Disagreeing')" class="p-3 bg-white border border-slate-200 hover:border-indigo-500 hover:bg-indigo-50 font-medium rounded-xl text-slate-700 text-sm transition-all text-left flex items-center justify-between">
+                            <span>Disagreeing</span>
+                            <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Feedback Banner -->
+                <div id="quiz-feedback" class="hidden mt-4 p-4 rounded-xl text-sm flex items-center justify-between">
+                    <span id="feedback-text"></span>
+                    <button onclick="nextQuizQuestion()" class="px-4 py-2 bg-indigo-600 text-white rounded-lg text-xs font-semibold hover:bg-indigo-700">Next Question</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= TAB 3: WORKPLACE ROLEPLAY GAME ================= -->
+        <section id="sec-game" class="hidden max-w-3xl mx-auto space-y-6">
+            
+            <!-- Scenario Selection Bar -->
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-200">
+                <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Select Workplace Scenario:</p>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2" id="scenario-selector">
+                    <button onclick="selectScenario(0)" id="scen-btn-0" class="p-3 rounded-xl border text-left text-xs font-medium transition-all bg-indigo-50 border-indigo-500 text-indigo-900">
+                        <i class="fa-solid fa-dumbbell text-indigo-600 mb-1 block text-sm"></i>
+                        <strong>1. Fitness VIP</strong>
+                        <span class="block text-[11px] text-slate-500 mt-0.5">VIP Perks & Incentives</span>
+                    </button>
+                    <button onclick="selectScenario(1)" id="scen-btn-1" class="p-3 rounded-xl border border-slate-200 hover:border-indigo-300 text-left text-xs font-medium transition-all bg-white text-slate-700">
+                        <i class="fa-solid fa-cart-shopping text-slate-500 mb-1 block text-sm"></i>
+                        <strong>2. Supermarket</strong>
+                        <span class="block text-[11px] text-slate-500 mt-0.5">Student Initiates Discussion</span>
+                    </button>
+                    <button onclick="selectScenario(2)" id="scen-btn-2" class="p-3 rounded-xl border border-slate-200 hover:border-indigo-300 text-left text-xs font-medium transition-all bg-white text-slate-700">
+                        <i class="fa-solid fa-book text-slate-500 mb-1 block text-sm"></i>
+                        <strong>3. Bookstore</strong>
+                        <span class="block text-[11px] text-slate-500 mt-0.5">Brand Promotion Strategy</span>
+                    </button>
+                    <button onclick="selectScenario(3)" id="scen-btn-3" class="p-3 rounded-xl border border-slate-200 hover:border-indigo-300 text-left text-xs font-medium transition-all bg-white text-slate-700">
+                        <i class="fa-solid fa-mug-hot text-slate-500 mb-1 block text-sm"></i>
+                        <strong>4. Cafe Open Day</strong>
+                        <span class="block text-[11px] text-slate-500 mt-0.5">4-Person Team Meeting</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Game Top Status Bar -->
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-200 flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <img id="partner-avatar" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop&q=80" alt="Partner" class="w-12 h-12 rounded-full object-cover border-2 border-indigo-500">
+                    <div>
+                        <h3 id="partner-name" class="font-bold text-slate-800 text-sm">Sarah (Fitness Manager)</h3>
+                        <p id="scenario-title" class="text-xs text-indigo-600 font-semibold">Scenario 1: Fitness VIP Scheme</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="text-right">
+                        <span class="text-xs text-slate-400 block uppercase font-bold">Communicative Score</span>
+                        <span id="game-score" class="text-lg font-bold text-indigo-600">0 Pts</span>
+                    </div>
+                    <button onclick="restartGame()" class="p-2 text-slate-400 hover:text-indigo-600 text-sm" title="Restart Scenario">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dialogue / Chat Container -->
+            <div id="chat-box" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-4 min-h-[300px] max-h-[420px] overflow-y-auto">
+                <!-- Dialogue bubbles rendered here dynamically -->
+            </div>
+
+            <!-- Response Selection Box -->
+            <div id="choices-container" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-3">
+                <div class="flex items-center justify-between mb-2">
+                    <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Choose the best vocational English response:</h4>
+                    <span class="text-xs text-indigo-600 font-medium"><i class="fa-solid fa-volume-high mr-1"></i> Click audio icon on options to listen</span>
+                </div>
+                <div id="game-options" class="space-y-2">
+                    <!-- Options populated dynamically -->
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-400 text-center py-4 text-xs mt-8">
+        <p>Vocational English 2B Interactive Learning Tool • Based on Lesson 2A: Useful Expressions</p>
+    </footer>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        // Speech Synthesis helper
+        function speak(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel(); // Stop any ongoing speech
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'en-US';
+                utterance.rate = 0.9;
+                window.speechSynthesis.speak(utterance);
+            }
+        }
+
+        // Tab Switching Logic
+        function switchTab(tabId) {
+            const tabs = ['cheatsheet', 'quiz', 'game'];
+            
+            tabs.forEach(t => {
+                const section = document.getElementById(`sec-${t}`);
+                const tabBtn = document.getElementById(`tab-${t}`);
+                
+                if (t === tabId) {
+                    section.classList.remove('hidden');
+                    tabBtn.className = "px-4 py-2 rounded-lg font-medium transition-all bg-white text-indigo-700 shadow";
+                } else {
+                    section.classList.add('hidden');
+                    tabBtn.className = "px-4 py-2 rounded-lg font-medium transition-all text-white hover:bg-white/10";
+                }
+            });
+
+            // Trigger initialization when switching to quiz or game
+            if (tabId === 'quiz') {
+                initQuiz();
+            } else if (tabId === 'game') {
+                initGame();
+            }
+        }
+
+        /* ================= QUIZ ENGINE ================= */
+        const quizData = [
+            { phrase: "For this new project, what is your preference?", answer: "Asking for Preference" },
+            { phrase: "Regarding the venue, what would you prefer?", answer: "Asking for Preference" },
+            { phrase: "Which one do you like better? Option A or Option B?", answer: "Asking for Preference" },
+            { phrase: "I would prefer the birthday discount because it builds customer loyalty.", answer: "Expressing Preference" },
+            { phrase: "My preference would be for social media ads as they target readers effectively.", answer: "Expressing Preference" },
+            { phrase: "I would rather choose a grand lucky draw than a discount day.", answer: "Expressing Preference" },
+            { phrase: "I agree with you because this strategy maximizes attendance.", answer: "Agreeing" },
+            { phrase: "You've got a point, as this digital strategy covers a wider audience.", answer: "Agreeing" },
+            { phrase: "I think you're right.", answer: "Agreeing" },
+            { phrase: "I see your point, BUT physical gifts offer longer brand exposure.", answer: "Disagreeing" },
+            { phrase: "That's true, BUT influencers reach a broader audience.", answer: "Disagreeing" },
+            { phrase: "Mmm... I'm not sure about that.", answer: "Disagreeing" }
+        ];
+
+        let currentQuizIndex = 0;
+        let quizScore = 0;
+        let quizTotal = 0;
+
+        function initQuiz() {
+            currentQuizIndex = 0;
+            quizScore = 0;
+            quizTotal = 0;
+            document.getElementById('quiz-score').innerText = quizScore;
+            document.getElementById('quiz-total').innerText = quizTotal;
+            loadQuizQuestion();
+        }
+
+        function loadQuizQuestion() {
+            const feedback = document.getElementById('quiz-feedback');
+            feedback.classList.add('hidden');
+            
+            // Pick a random question
+            currentQuizIndex = Math.floor(Math.random() * quizData.length);
+            const q = quizData[currentQuizIndex];
+            
+            document.getElementById('quiz-phrase').innerText = `"${q.phrase}"`;
+        }
+
+        function checkQuiz(selectedCategory) {
+            const currentQ = quizData[currentQuizIndex];
+            const feedback = document.getElementById('quiz-feedback');
+            const feedbackText = document.getElementById('feedback-text');
+            
+            quizTotal++;
+            if (selectedCategory === currentQ.answer) {
+                quizScore++;
+                feedback.className = "mt-4 p-4 rounded-xl text-sm flex items-center justify-between bg-emerald-100 text-emerald-800 border border-emerald-200";
+                feedbackText.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-600 mr-2"></i><strong>Correct!</strong> "${currentQ.phrase}" belongs to <strong>${currentQ.answer}</strong>.`;
+            } else {
+                feedback.className = "mt-4 p-4 rounded-xl text-sm flex items-center justify-between bg-rose-100 text-rose-800 border border-rose-200";
+                feedbackText.innerHTML = `<i class="fa-solid fa-circle-xmark text-rose-600 mr-2"></i><strong>Incorrect!</strong> Correct classification: <strong>${currentQ.answer}</strong>.`;
+            }
+
+            document.getElementById('quiz-score').innerText = quizScore;
+            document.getElementById('quiz-total').innerText = quizTotal;
+            feedback.classList.remove('hidden');
+        }
+
+        function nextQuizQuestion() {
+            loadQuizQuestion();
+        }
+
+        /* ================= ROLEPLAY GAME ENGINE (4 SCENARIOS) ================= */
+        let currentScenarioIndex = 0;
+        let gameStep = 0;
+        let gamePoints = 0;
+
+        const scenarios = [
+            // SCENARIO 0: Fitness Centre VIP Scheme
+            {
+                title: "Scenario 1: Fitness VIP Scheme",
+                partnerName: "Sarah (Fitness Manager)",
+                partnerAvatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop&q=80",
+                script: [
+                    {
+                        partnerText: "Hi! We are planning to launch a new VIP scheme for our fitness centre. Regarding the welcoming perk, what would you prefer: a birthday discount or cash coupons?",
+                        options: [
+                            {
+                                text: "I would prefer the birthday discount because it makes members feel valued on their special day.",
+                                correct: true,
+                                score: 20,
+                                feedback: "Excellent! Stated preference clearly with a reason."
+                            },
+                            {
+                                text: "I don't mind, both are fine.",
+                                correct: false,
+                                score: 0,
+                                feedback: "Try using target expressions to state a clear preference."
+                            },
+                            {
+                                text: "Regarding the perks, what is your preference?",
+                                correct: false,
+                                score: 5,
+                                feedback: "Answer her question directly before asking back."
+                            }
+                        ]
+                    },
+                    {
+                        partnerText: "The birthday discount is great! We also need to decide on the welcome gift. What do you think?",
+                        options: [
+                            {
+                                text: "Concerning the welcome gift, would you prefer a premium yoga mat or a free fitness trial lesson?",
+                                correct: true,
+                                score: 20,
+                                feedback: "Superb! You actively asked for preference between two choices using 'Concerning [topic], would you prefer...'!"
+                            },
+                            {
+                                text: "I like yoga mat.",
+                                correct: false,
+                                score: 5,
+                                feedback: "Practice asking Sarah for her preference here."
+                            },
+                            {
+                                text: "Yoga mats are cheaper than trial lessons.",
+                                correct: false,
+                                score: 10,
+                                feedback: "Good point, but try asking Sarah for her choice."
+                            }
+                        ]
+                    },
+                    {
+                        partnerText: "I'd prefer the free fitness trial lesson because it introduces members to our personal trainers right away! What's your view?",
+                        options: [
+                            {
+                                text: "I see your point, BUT physical gifts like yoga mats carry our logo and work as long-term daily promotion.",
+                                correct: true,
+                                score: 20,
+                                feedback: "Great diplomatic disagreement! 'I see your point, BUT...' introduces your counter-argument."
+                            },
+                            {
+                                text: "No, yoga mats are way better.",
+                                correct: false,
+                                score: 0,
+                                feedback: "Too direct! Use polite softening expressions like 'I see your point, but...'."
+                            },
+                            {
+                                text: "I agree.",
+                                correct: false,
+                                score: 5,
+                                feedback: "Expand your response with diplomatic expressions."
+                            }
+                        ]
+                    },
+                    {
+                        partnerText: "Branded yoga mats offer long-term visibility! Let's go with the birthday discount and yoga mat gift package!",
+                        options: [
+                            {
+                                text: "I agree with you because this combination balances personal touch with brand exposure.",
+                                correct: true,
+                                score: 20,
+                                feedback: "Spot on! You used 'I agree with you because...' to finalize the plan."
+                            },
+                            {
+                                text: "Yes.",
+                                correct: false,
+                                score: 5,
+                                feedback: "Express full agreement using target vocabulary."
+                            },
+                            {
+                                text: "You've got a point.",
+                                correct: false,
+                                score: 12,
+                                feedback: "Remember to explain agreement with 'because/as/since'."
+                            }
+                        ]
+                    }
+                ]
+            },
+
+            // SCENARIO 1: Supermarket Branch Opening Promotion (STUDENT INITIATES)
+            {
+                title: "Scenario 2: Supermarket Opening (Student Initiated)",
+                partnerName: "David (Marketing Supervisor)",
+                partnerAvatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&auto=format&fit=crop&q=80",
+                studentInitiates: true,
+                script: [
+                    {
+                        prompt: "Start the meeting with David by asking for his preference regarding the main attraction for the new branch opening (a grand lucky draw vs. a member discount day):",
+                        options: [
+                            {
+                                text: "Good morning David! Concerning the new branch launch, which one would you prefer: a grand lucky draw or a member discount day?",
+                                correct: true,
+                                score: 20,
+                                feedback: "Awesome initiative! You initiated the discussion smoothly using 'Concerning [topic], which one would you prefer...?'"
+                            },
+                            {
+                                text: "Hi David, we should do a lucky draw.",
+                                correct: false,
+                                score: 8,
+                                feedback: "Good, but practice initiating by asking David for his preference first."
+                            },
+                            {
+                                text: "What are we doing today?",
+                                correct: false,
+                                score: 0,
+                                feedback: "Too generic. Open the meeting with the structured preference question."
+                            }
+                        ]
+                    },
+                    {
+                        partnerText: "Good morning! I would prefer a member discount day because it directly boosts store revenue on day one. What is your preference?",
+                        options: [
+                            {
+                                text: "I would rather choose a grand lucky draw than a member discount day as grand prizes create exciting buzz in the community.",
+                                correct: true,
+                                score: 20,
+                                feedback: "Excellent! You used 'I would rather choose [A] than [B] as...' to state your contrasting preference."
+                            },
+                            {
+                                text: "Discount day is fine with me.",
+                                correct: false,
+                                score: 5,
+                                feedback: "Express your own preference and give a reason using 'as/because'."
+                            },
+                            {
+                                text: "Do you have any preference?",
+                                correct: false,
+                                score: 0,
+                                feedback: "David already stated his preference. Present your point of view now!"
+                            }
+                        ]
+                    },
+                    {
+                        partnerText: "A lucky draw definitely creates buzz! Now, regarding repeat customer offers, which suggestion would you prefer: new member coupons or free opening gifts?",
+                        options: [
+                            {
+                                text: "My preference would be for new member coupons since they incentivize shoppers to return for subsequent visits.",
+                                correct: true,
+                                score: 20,
+                                feedback: "Perfect! 'My preference would be for [noun] since...' delivers a concise, persuasive answer."
+                            },
+                            {
+                                text: "Free gifts are nice.",
+                                correct: false,
+                                score: 5,
+                                feedback: "Try using formal expressions like 'My preference would be for...'"
+                            },
+                            {
+                                text: "Which one do you like better?",
+                                correct: false,
+                                score: 5,
+                                feedback: "David asked for your preference. Give your decision directly."
+                            }
+                        ]
+                    },
+                    {
+                        partnerText: "Combining a lucky draw for buzz and new member coupons for repeat visits sounds like a winning opening campaign!",
+                        options: [
+                            {
+                                text: "I think you're right, as this strategy balances big opening crowd turnout with sustained repeat sales.",
+                                correct: true,
+                                score: 20,
+                                feedback: "Great wrap-up! 'I think you're right, as...' completes the meeting professionally."
+                            },
+                            {
+                                text: "Okay, perfect.",
+                                correct: false,
+                                score: 5,
+                                feedback: "Add formal agreement expressions to reinforce learning."
+                            },
+                            {
+                                text: "Regarding the budget, what would you prefer?",
+                                correct: false,
+                                score: 5,
+                                feedback: "The decision is already agreed on. Conclude with an expression of agreement!"
+                            }
+                        ]
+                    }
+                ]
+            },
+
+            // SCENARIO 2: Bookstore Brand Promotion Strategy
+            {
+                title: "Scenario 3: Bookstore Marketing",
+                partnerName: "Elena (Brand Manager)",
+                partnerAvatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&auto=format&fit=crop&q=80",
+                script: [
+                    {
+                        partnerText: "Hello! We are organizing a campaign to promote our bookstore brand. Regarding our primary marketing channel, what is your preference: social media ads or printed leaflets?",
+                        options: [
+                            {
+                                text: "My preference would be for social media ads because they let us target avid readers precisely based on reading interests.",
+                                correct: true,
+                                score: 20,
+                                feedback: "Well done! 'My preference would be for [noun]' with 'because' is professional."
+                            },
+                            {
+                                text: "I like social media ads.",
+                                correct: false,
+                                score: 8,
+                                feedback: "Expand to 'My preference would be for...' with a clear reason."
+                            },
+                            {
+                                text: "Regarding the promotion, what is your preference?",
+                                correct: false,
+                                score: 0,
+                                feedback: "Answer Elena's question directly!"
+                            }
+                        ]
+                    },
+                    {
+                        partnerText: "Social media ads give great targeting! Now, we also want to plan offline community activities. How should we ask the event team for their preference?",
+                        options: [
+                            {
+                                text: "We can ask them: 'Concerning offline events, which one would you prefer: an interactive roadshow or hiring KOL influencers?'",
+                                correct: true,
+                                score: 20,
+                                feedback: "Fantastic! You formulated a proper two-choice preference question using target grammar."
+                            },
+                            {
+                                text: "Roadshow or KOL, which is good?",
+                                correct: false,
+                                score: 5,
+                                feedback: "Formulate a complete question using 'Concerning [topic], which one would you prefer?'"
+                            },
+                            {
+                                text: "I would prefer roadshows because they are interactive.",
+                                correct: false,
+                                score: 10,
+                                feedback: "Good sentence, but practice phrasing the preference question for the team."
+                            }
+                        ]
+                    },
+                    {
+                        partnerText: "Good phrasing! If the event team prefers an interactive roadshow, but you think KOL influencer promotion is more cost-effective, how would you respond?",
+                        options: [
+                            {
+                                text: "That's true, BUT KOL book influencers reach a much broader regional audience at lower setup costs.",
+                                correct: true,
+                                score: 20,
+                                feedback: "Superb diplomatic disagreement! 'That's true, BUT...' shows respect before giving your opinion."
+                            },
+                            {
+                                text: "I disagree. Roadshows are useless.",
+                                correct: false,
+                                score: 0,
+                                feedback: "Avoid overly blunt statements in business contexts. Use 'That's true, but...'."
+                            },
+                            {
+                                text: "I agree with the roadshow idea completely.",
+                                correct: false,
+                                score: 10,
+                                feedback: "Try voicing your contrasting viewpoint diplomatically."
+                            }
+                        ]
+                    },
+                    {
+                        partnerText: "Fair point on budget efficiency and online reach! Combining targeted social media ads with KOL book reviewers seems to be our best strategy.",
+                        options: [
+                            {
+                                text: "You've got a point, as this digital strategy gives us maximum brand reach within our budget.",
+                                correct: true,
+                                score: 20,
+                                feedback: "Excellent resolution! You confirmed agreement using 'You've got a point, as...'."
+                            },
+                            {
+                                text: "Thanks, sounds good.",
+                                correct: false,
+                                score: 0,
+                                feedback: "Wrap up with proper workplace agreement expressions."
+                            },
+                            {
+                                text: "I would rather choose leaflets than roadshows.",
+                                correct: false,
+                                score: 10,
+                                feedback: "Elena already agreed to the campaign strategy, so an agreeing phrase works best here."
+                            }
+                        ]
+                    }
+                ]
+            },
+
+            // SCENARIO 3: Cafe Open Day Events (4-PERSON MEETING)
+            {
+                title: "Scenario 4: Cafe Open Day (4-Person Team Meeting)",
+                partnerName: "Team: Manager Boss, Barista Alex, Marketer Chloe",
+                partnerAvatar: "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=100&auto=format&fit=crop&q=80",
+                isMultiRole: true,
+                script: [
+                    {
+                        speakerName: "Manager Boss",
+                        speakerAvatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80",
+                        partnerText: "Team, welcome to our Cafe Open Day strategy meeting! We need to pick our main attraction. Regarding open day activities, what is your preference?",
+                        options: [
+                            {
+                                text: "For the open day attraction, my preference would be for free cake tasting because artisanal cakes pair well with coffee and attract dessert lovers.",
+                                correct: true,
+                                score: 20,
+                                feedback: "Great opening! You expressed preference clearly using 'For [topic], my preference would be for...'."
+                            },
+                            {
+                                text: "Cake tasting is good.",
+                                correct: false,
+                                score: 5,
+                                feedback: "Try using formal workplace preference structures."
+                            },
+                            {
+                                text: "Regarding open day, what do you like?",
+                                correct: false,
+                                score: 5,
+                                feedback: "Boss already asked for input. Provide your recommendation."
+                            }
+                        ]
+                    },
+                    {
+                        speakerName: "Barista Alex",
+                        speakerAvatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80",
+                        partnerText: "Free cake sounds delicious! But as a barista, I think giving out free coffee samples will showcase our signature roast quality directly. What do you think, Chloe?",
+                        speakerName2: "Marketer Chloe",
+                        speakerAvatar2: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=100&auto=format&fit=crop&q=80",
+                        partnerText2: "I see Alex's point, BUT an open day discount or Buy-One-Get-One-Free (BOGO) offer will drive actual sales revenue! Let's ask our teammate for their view.",
+                        options: [
+                            {
+                                text: "Concerning sales offers, which one would you prefer: a Buy-One-Get-One-Free promotion or a general open day discount?",
+                                correct: true,
+                                score: 20,
+                                feedback: "Spot on! You facilitated team discussion by asking 'Concerning [topic], which one would you prefer...?'"
+                            },
+                            {
+                                text: "I like free coffee better than BOGO.",
+                                correct: false,
+                                score: 10,
+                                feedback: "Good, but try asking Chloe and Alex to choose between BOGO and open day discount."
+                            },
+                            {
+                                text: "Buy one get one free is better.",
+                                correct: false,
+                                score: 8,
+                                feedback: "Formulate a preference question to engage both team members."
+                            }
+                        ]
+                    },
+                    {
+                        speakerName: "Marketer Chloe",
+                        speakerAvatar: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=100&auto=format&fit=crop&q=80",
+                        partnerText: "I would prefer Buy-One-Get-One-Free because customers bring a friend, doubling our foot traffic!",
+                        speakerName2: "Barista Alex",
+                        speakerAvatar2: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80",
+                        partnerText2: "Mmm... I'm not sure about BOGO coffee because baristas might get overwhelmed during rush hour.",
+                        options: [
+                            {
+                                text: "You may have a point, BUT BOGO creates double social media check-ins and brings immediate viral popularity.",
+                                correct: true,
+                                score: 20,
+                                feedback: "Excellent diplomatic response! 'You may have a point, BUT...' soft-disagrees with Alex respectfully."
+                            },
+                            {
+                                text: "Alex, you are wrong, BOGO is easy.",
+                                correct: false,
+                                score: 0,
+                                feedback: "Avoid telling teammates they are wrong directly. Use diplomatic phrases like 'You may have a point, but...'."
+                            },
+                            {
+                                text: "I don't think so.",
+                                correct: false,
+                                score: 5,
+                                feedback: "Always back up your disagreement with 'because/as' or 'but' explanations."
+                            }
+                        ]
+                    },
+                    {
+                        speakerName: "Manager Boss",
+                        speakerAvatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80",
+                        partnerText: "Great discussions! So our strategy will be free cake tasting with signature coffee, paired with a Buy-One-Get-One-Free drink deal!",
+                        options: [
+                            {
+                                text: "I agree with you because combining complimentary cake tasting with BOGO drinks maximizes both customer excitement and sales!",
+                                correct: true,
+                                score: 20,
+                                feedback: "Brilliant conclusion! You expressed agreement and summarized key rationale clearly."
+                            },
+                            {
+                                text: "Sounds good to me.",
+                                correct: false,
+                                score: 5,
+                                feedback: "Wrap up with target agreement expressions like 'I agree with you because...'."
+                            },
+                            {
+                                text: "Which suggestion would you prefer?",
+                                correct: false,
+                                score: 0,
+                                feedback: "Boss has made the final decision. Express agreement to conclude the meeting!"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ];
+
+        function selectScenario(index) {
+            currentScenarioIndex = index;
+
+            // Update Selector Button UI
+            for (let i = 0; i < scenarios.length; i++) {
+                const btn = document.getElementById(`scen-btn-${i}`);
+                if (i === index) {
+                    btn.className = "p-3 rounded-xl border text-left text-xs font-medium transition-all bg-indigo-50 border-indigo-500 text-indigo-900 shadow-sm";
+                    btn.querySelector('i').className = btn.querySelector('i').className.replace('text-slate-500', 'text-indigo-600');
+                } else {
+                    btn.className = "p-3 rounded-xl border border-slate-200 hover:border-indigo-300 text-left text-xs font-medium transition-all bg-white text-slate-700";
+                    btn.querySelector('i').className = btn.querySelector('i').className.replace('text-indigo-600', 'text-slate-500');
+                }
+            }
+
+            // Update Top Bar Partner Info
+            const sc = scenarios[currentScenarioIndex];
+            document.getElementById('partner-name').innerText = sc.partnerName;
+            document.getElementById('partner-avatar').src = sc.partnerAvatar;
+            document.getElementById('scenario-title').innerText = sc.title;
+
+            // Reset Game
+            restartGame();
+        }
+
+        function initGame() {
+            gameStep = 0;
+            gamePoints = 0;
+            document.getElementById('game-score').innerText = `${gamePoints} Pts`;
+            document.getElementById('chat-box').innerHTML = '';
+            
+            // Set header according to current scenario
+            const sc = scenarios[currentScenarioIndex];
+            document.getElementById('partner-name').innerText = sc.partnerName;
+            document.getElementById('partner-avatar').src = sc.partnerAvatar;
+            document.getElementById('scenario-title').innerText = sc.title;
+
+            renderGameStep();
+        }
+
+        function renderGameStep() {
+            const sc = scenarios[currentScenarioIndex];
+            if (gameStep >= sc.script.length) {
+                renderGameCompletion();
+                return;
+            }
+
+            const currentScript = sc.script[gameStep];
+
+            // Render scenario prompts / partner statements
+            if (currentScript.prompt) {
+                appendSystemPrompt(currentScript.prompt);
+            } else if (currentScript.partnerText) {
+                appendChatBubble('partner', currentScript.partnerText, currentScript.speakerName || sc.partnerName, currentScript.speakerAvatar || sc.partnerAvatar);
+                
+                // If secondary speaker exists in 4-role meeting step
+                if (currentScript.partnerText2) {
+                    setTimeout(() => {
+                        appendChatBubble('partner', currentScript.partnerText2, currentScript.speakerName2, currentScript.speakerAvatar2);
+                    }, 600);
+                }
+            }
+
+            // Render Options with Listen Buttons
+            const optionsContainer = document.getElementById('game-options');
+            optionsContainer.innerHTML = '';
+
+            currentScript.options.forEach((opt, idx) => {
+                const optWrapper = document.createElement('div');
+                optWrapper.className = "w-full text-left p-3.5 rounded-xl border border-slate-200 hover:border-indigo-500 hover:bg-indigo-50/60 text-slate-700 text-sm font-medium transition-all flex items-start justify-between space-x-3 group cursor-pointer";
+                
+                const safeText = opt.text.replace(/'/g, "\\'");
+
+                optWrapper.innerHTML = `
+                    <div class="flex items-start space-x-3 flex-grow" onclick="selectGameOptionByIndex(${idx})">
+                        <span class="w-6 h-6 rounded-full bg-indigo-100 text-indigo-700 flex-shrink-0 flex items-center justify-center font-bold text-xs mt-0.5 group-hover:bg-indigo-600 group-hover:text-white transition-all">${String.fromCharCode(65 + idx)}</span>
+                        <span class="flex-grow">${opt.text}</span>
+                    </div>
+                    <button type="button" onclick="event.stopPropagation(); speak('${safeText}')" title="Listen to option" class="p-1.5 text-slate-400 hover:text-indigo-600 rounded-lg hover:bg-indigo-100/50 transition-all flex-shrink-0">
+                        <i class="fa-solid fa-volume-high text-sm"></i>
+                    </button>
+                `;
+                optionsContainer.appendChild(optWrapper);
+            });
+        }
+
+        function selectGameOptionByIndex(idx) {
+            const sc = scenarios[currentScenarioIndex];
+            const currentScript = sc.script[gameStep];
+            selectGameOption(currentScript.options[idx]);
+        }
+
+        function appendSystemPrompt(text) {
+            const chatBox = document.getElementById('chat-box');
+            const wrapper = document.createElement('div');
+            wrapper.className = "bg-amber-50 border border-amber-200 text-amber-900 p-3 rounded-xl text-xs font-medium my-2 flex items-center gap-2";
+            wrapper.innerHTML = `<i class="fa-solid fa-flag text-amber-600"></i> <span><strong>Your Turn to Initiate:</strong> ${text}</span>`;
+            chatBox.appendChild(wrapper);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function appendChatBubble(sender, text, customName, customAvatar) {
+            const sc = scenarios[currentScenarioIndex];
+            const chatBox = document.getElementById('chat-box');
+            const wrapper = document.createElement('div');
+            const safeText = text.replace(/'/g, "\\'");
+
+            const avatar = customAvatar || sc.partnerAvatar;
+            const name = customName || sc.partnerName;
+
+            if (sender === 'partner') {
+                wrapper.className = "flex items-start space-x-3 mb-3";
+                wrapper.innerHTML = `
+                    <img src="${avatar}" class="w-8 h-8 rounded-full object-cover border border-indigo-200">
+                    <div class="bg-slate-100 p-3.5 rounded-2xl chat-bubble-left max-w-[80%] text-sm text-slate-800 shadow-sm relative group">
+                        <div class="flex items-center justify-between mb-1 gap-2">
+                            <span class="font-semibold text-xs text-indigo-600">${name}</span>
+                            <button onclick="speak('${safeText}')" title="Listen to dialogue" class="text-slate-400 hover:text-indigo-600"><i class="fa-solid fa-volume-high text-xs"></i></button>
+                        </div>
+                        <p class="leading-relaxed">${text}</p>
+                    </div>
+                `;
+            } else {
+                wrapper.className = "flex items-end justify-end space-x-3 mb-3";
+                wrapper.innerHTML = `
+                    <div class="bg-indigo-600 text-white p-3.5 rounded-2xl chat-bubble-right max-w-[80%] text-sm shadow-sm relative group">
+                        <div class="flex items-center justify-between mb-1 gap-2 border-b border-indigo-500/50 pb-1">
+                            <span class="font-semibold text-xs text-indigo-100">You (Student)</span>
+                            <button onclick="speak('${safeText}')" title="Listen to your answer" class="text-indigo-200 hover:text-white"><i class="fa-solid fa-volume-high text-xs"></i></button>
+                        </div>
+                        <p class="leading-relaxed">${text}</p>
+                    </div>
+                    <div class="w-8 h-8 rounded-full bg-indigo-800 text-white flex items-center justify-center text-xs font-bold">You</div>
+                `;
+            }
+
+            chatBox.appendChild(wrapper);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function selectGameOption(option) {
+            const sc = scenarios[currentScenarioIndex];
+
+            // Append User choice
+            appendChatBubble('user', option.text);
+
+            // Add points
+            gamePoints += option.score;
+            document.getElementById('game-score').innerText = `${gamePoints} Pts`;
+
+            // Display Feedback overlay temporarily with audio play button
+            const chatBox = document.getElementById('chat-box');
+            const feedbackDiv = document.createElement('div');
+            const safeFeedback = option.feedback.replace(/'/g, "\\'");
+            feedbackDiv.className = `p-3 rounded-xl text-xs font-medium my-2 flex items-center justify-between ${option.correct ? 'bg-emerald-100 text-emerald-800 border border-emerald-200' : 'bg-amber-100 text-amber-800 border border-amber-200'}`;
+            feedbackDiv.innerHTML = `
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid ${option.correct ? 'fa-circle-check text-emerald-600' : 'fa-triangle-exclamation text-amber-600'} text-base flex-shrink-0"></i> 
+                    <span>${option.feedback}</span>
+                </div>
+                <button onclick="speak('${safeFeedback}')" title="Listen to feedback" class="p-1 text-slate-500 hover:text-indigo-700 ml-2 flex-shrink-0"><i class="fa-solid fa-volume-high text-xs"></i></button>
+            `;
+            chatBox.appendChild(feedbackDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+            // Clear options during delay
+            document.getElementById('game-options').innerHTML = `<p class="text-xs text-slate-400 text-center py-2"><i class="fa-solid fa-spinner fa-spin mr-1"></i> Workplace team is responding...</p>`;
+
+            gameStep++;
+            setTimeout(() => {
+                renderGameStep();
+            }, 2000);
+        }
+
+        function renderGameCompletion() {
+            const nextScen = (currentScenarioIndex + 1) % scenarios.length;
+
+            document.getElementById('chat-box').innerHTML += `
+                <div class="bg-indigo-50 border border-indigo-200 p-6 rounded-2xl text-center space-y-3 my-4">
+                    <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto text-xl shadow-md">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-indigo-900">Scenario Completed!</h3>
+                    <p class="text-sm text-indigo-700">You earned <strong>${gamePoints}</strong> out of 80 communicative skill points!</p>
+                </div>
+            `;
+
+            document.getElementById('choices-container').innerHTML = `
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <button onclick="restartGame()" class="w-full p-3 bg-slate-100 border border-slate-200 text-slate-700 font-bold rounded-xl hover:bg-slate-200 transition-all text-xs">
+                        <i class="fa-solid fa-rotate-right mr-1"></i> Replay This Scenario
+                    </button>
+                    <button onclick="selectScenario(${nextScen})" class="w-full p-3 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition-all text-xs shadow-sm">
+                        Next Scenario <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+            `;
+            const chatBox = document.getElementById('chat-box');
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function restartGame() {
+            document.getElementById('choices-container').innerHTML = `
+                <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Choose the best vocational English response:</h4>
+                <div id="game-options" class="space-y-2"></div>
+            `;
+            initGame();
+        }
+
+        // Initialize on Load
+        window.onload = function() {
+            initGame();
+        };
+    </script>
+</body>
+</html>
